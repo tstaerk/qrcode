@@ -1,2 +1,2 @@
-streamlit==1.22.0
+streamlit
 qrcode[pil]==7.4.2
