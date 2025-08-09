@@ -23,4 +23,4 @@ if data:
     img = qr.make_image(fill='black', back_color='white')
 
     # Display the QR code image
-    st.image(img, caption='Generated QR Code', use_column_width=True)
+    st.image(img, caption='Generated QR Code', use_container_width=True)
