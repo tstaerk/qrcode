@@ -27,4 +27,4 @@ if data:
     img.save(img_byte_arr, format='PNG')
     img_byte_arr = img_byte_arr.getvalue()
     # Display the QR code image
-    st.image(img, caption='Generated QR Code', use_container_width=True)
+    st.image(img_byte_arr, caption='Generated QR Code', use_container_width=True)
