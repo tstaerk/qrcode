@@ -1,5 +1,6 @@
 import streamlit as st
 import qrcode
+from io import BytesIO
 
 # Title of the app
 st.title('QR Code Generator')
@@ -21,6 +22,9 @@ if data:
     
     # Create an image of the QR code
     img = qr.make_image(fill='black', back_color='white')
-
+    # Convert the image to a byte format
+    img_byte_arr = BytesIO()
+    img.save(img_byte_arr, format='PNG')
+    img_byte_arr = img_byte_arr.getvalue()
     # Display the QR code image
     st.image(img, caption='Generated QR Code', use_container_width=True)
