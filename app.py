@@ -3,10 +3,10 @@ import qrcode
 from io import BytesIO
 
 # Title of the app
-st.title('QR Code Generator')
+st.title('QReative, you creative QR Code Generator')
 
 # User input for the content of the QR code
-data = st.text_input('Enter the data for the QR code:')
+data = st.text_input('Enter the data for the QR code:','https://www.staerk.de/thorsten')
 
 # Check if the user entered some data
 if data:
